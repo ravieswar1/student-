@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IDEAL INSTITUTE OF TECHNOLOGY TEACHE RREVIEW</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('feedbackbackground.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('library-bg.jpg') no-repeat center center/cover;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px; /* Narrower for column look */
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #666;
+    }
+
+    .faculty-list {
+      display: flex;
+      flex-direction: column; /* Stack vertically */
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: left;
+    }
+
+    .card img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    /* Star Rating */
+    .stars {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+    }
+
+    .stars input {
+      display: none;
+    }
+
+    .stars label {
+      font-size: 24px;
+      color: lightgray;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .stars input:checked ~ label,
+    .stars label:hover,
+    .stars label:hover ~ label {
+      color: gold;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      resize: none;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #007BFF;
+      color: #fff;
+      font-size: 0.9rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>IDEAL INSTITUTE OF TECHNOLOGY</h1>
+    <p>Browse and review our educators</p>
+
+    <div class="faculty-list">
+      <!-- Teacher Card 1-->
+      <div class="card">
+        <img src="teacher1.jpg" alt=" DATA WAREHOUSE & DATA MINING">
+        <h3>MVV CHOWDARY</h3>
+        <form>
+          <div class="stars">
+            <input type="radio" id="star5-anya" name="rating-anya" value="5"><label for="star5-anya">★</label>
+            <input type="radio" id="star4-anya" name="rating-anya" value="4"><label for="star4-anya">★</label>
+            <input type="radio" id="star3-anya" name="rating-anya" value="3"><label for="star3-anya">★</label>
+            <input type="radio" id="star2-anya" name="rating-anya" value="2"><label for="star2-anya">★</label>
+            <input type="radio" id="star1-anya" name="rating-anya" value="1"><label for="star1-anya">★</label>
+          </div>
+          <textarea placeholder="Write your review here..." rows="3"></textarea>
+          <button type="submit" class="btn">Submit Review</button>
+        </form>
+      </div>
+
+      <!-- Teacher 2 -->
+      <div class="card">
+        <img src="teacher2.jpg" alt="COMPUTER NETWORKS">
+        <h3>G DURGA DEVI</h3>
+        <form>
+          <div class="stars">
+            <input type="radio" id="star5-ben" name="rating-ben" value="5"><label for="star5-ben">★</label>
+            <input type="radio" id="star4-ben" name="rating-ben" value="4"><label for="star4-ben">★</label>
+            <input type="radio" id="star3-ben" name="rating-ben" value="3"><label for="star3-ben">★</label>
+            <input type="radio" id="star2-ben" name="rating-ben" value="2"><label for="star2-ben">★</label>
+            <input type="radio" id="star1-ben" name="rating-ben" value="1"><label for="star1-ben">★</label>
+          </div>
+          <textarea placeholder="Write your review here..." rows="3"></textarea>
+          <button type="submit" class="btn">Submit Review</button>
+        </form>
+      </div>
+
+      <!-- Teacher 3 -->
+      <div class="card">
+        <img src="teacher3.jpg" alt="FORMAL LANGUAGES & AUTOMATA THEORY">
+        <h3>MSRS PRASAD</h3>
+        <form>
+          <div class="stars">
+            <input type="radio" id="star5-ap" name="rating-ap" value="5"><label for="star5-ap">★</label>
+            <input type="radio" id="star4-ap" name="rating-ap" value="4"><label for="star4-ap">★</label>
+            <input type="radio" id="star3-ap" name="rating-ap" value="3"><label for="star3-ap">★</label>
+            <input type="radio" id="star2-ap" name="rating-ap" value="2"><label for="star2-ap">★</label>
+            <input type="radio" id="star1-ap" name="rating-ap" value="1"><label for="star1-ap">★</label>
+          </div>
+          <textarea placeholder="Write your review here..." rows="3"></textarea>
+          <button type="submit" class="btn">Submit Review</button>
+        </form>
+      </div>
+
+      <!-- Teacher 4 -->
+      <div class="card">
+        <img src="teacher4.jpg" alt="OBJECT ORIENTED ANALYSIS & DESIGN">
+        <h3>TDS CHARISHMA</h3>
+        <form>
+          <div class="stars">
+            <input type="radio" id="star5-dre" name="rating-dre" value="5"><label for="star5-dre">★</label>
+            <input type="radio" id="star4-dre" name="rating-dre" value="4"><label for="star4-dre">★</label>
+            <input type="radio" id="star3-dre" name="rating-dre" value="3"><label for="star3-dre">★</label>
+            <input type="radio" id="star2-dre" name="rating-dre" value="2"><label for="star2-dre">★</label>
+            <input type="radio" id="star1-dre" name="rating-dre" value="1"><label for="star1-dre">★</label>
+          </div>
+           <textarea placeholder="Write your review here..." rows="3"></textarea>
+          <button type="submit" class="btn">Submit Review</button>
+        </form>
+      </div>
+
+           <!-- Teacher 5 -->
+      <div class="card">
+        <img src="teacher3.jpg" alt="ELECTRICAL DEVICES & CIRCUITS">
+        <h3>V KRISHNAN</h3>
+        <form>
+          <div class="stars">
+            <input type="radio" id="star5-ap" name="rating-ap" value="5"><label for="star5-ap">★</label>
+            <input type="radio" id="star4-ap" name="rating-ap" value="4"><label for="star4-ap">★</label>
+            <input type="radio" id="star3-ap" name="rating-ap" value="3"><label for="star3-ap">★</label>
+            <input type="radio" id="star2-ap" name="rating-ap" value="2"><label for="star2-ap">★</label>
+            <input type="radio" id="star1-ap" name="rating-ap" value="1"><label for="star1-ap">★</label>
+          </div>
+          <textarea placeholder="Write your review here..." rows="3"></textarea>
+          <button type="submit" class="btn">Submit Review</button>
+        </form>
+      </div>
+
+   <!-- Teacher 6 -->
+      <div class="card">
+        <img src="teacher3.jpg" alt="SOC LAB">
+        <h3>SVN KUMAR</h3>
+        <form>
+          <div class="stars">
+            <input type="radio" id="star5-ap" name="rating-ap" value="5"><label for="star5-ap">★</label>
+            <input type="radio" id="star4-ap" name="rating-ap" value="4"><label for="star4-ap">★</label>
+            <input type="radio" id="star3-ap" name="rating-ap" value="3"><label for="star3-ap">★</label>
+            <input type="radio" id="star2-ap" name="rating-ap" value="2"><label for="star2-ap">★</label>
+            <input type="radio" id="star1-ap" name="rating-ap" value="1"><label for="star1-ap">★</label>
+          </div>
+          <textarea placeholder="Write your review here..." rows="3"></textarea>
+          <button type="submit" class="btn">Submit Review</button>
+        </form>
+      </div>
+
+   <!-- Teacher 7 -->
+      <div class="card">
+        <img src="teacher3.jpg" alt="CRT-A">
+        <h3>DD NAGESWARA RAO</h3>
+        <form>
+          <div class="stars">
+            <input type="radio" id="star5-ap" name="rating-ap" value="5"><label for="star5-ap">★</label>
+            <input type="radio" id="star4-ap" name="rating-ap" value="4"><label for="star4-ap">★</label>
+            <input type="radio" id="star3-ap" name="rating-ap" value="3"><label for="star3-ap">★</label>
+            <input type="radio" id="star2-ap" name="rating-ap" value="2"><label for="star2-ap">★</label>
+            <input type="radio" id="star1-ap" name="rating-ap" value="1"><label for="star1-ap">★</label>
+          </div>
+          <textarea placeholder="Write your review here..." rows="3"></textarea>
+          <button type="submit" class="btn">Submit Review</button>
+        </form>
+      </div>
+   <!-- Teacher 8 -->
+      <div class="card">
+        <img src="teacher3.jpg" alt="CRT-E">
+        <h3>P ANAND RAO</h3>
+        <form>
+          <div class="stars">
+            <input type="radio" id="star5-ap" name="rating-ap" value="5"><label for="star5-ap">★</label>
+            <input type="radio" id="star4-ap" name="rating-ap" value="4"><label for="star4-ap">★</label>
+            <input type="radio" id="star3-ap" name="rating-ap" value="3"><label for="star3-ap">★</label>
+            <input type="radio" id="star2-ap" name="rating-ap" value="2"><label for="star2-ap">★</label>
+            <input type="radio" id="star1-ap" name="rating-ap" value="1"><label for="star1-ap">★</label>
+          </div>
+          <textarea placeholder="Write your review here..." rows="3"></textarea>
+          <button type="submit" class="btn">Submit Review</button>
+        </form>
+      </div>
+
+
+          <textarea placeholder="Write your review here..." rows="3"></textarea>
+          <button type="submit" class="btn">Submit Review</button>
+        </form>
+      </div>
+ 
+    </div>
+  </div>
+</body>
+</html>
+
